@@ -1,0 +1,17 @@
+Create Environment in the primary directory containing main.py
+
+python -m venv ./venv
+
+Activate Env
+
+. ./venv/Scripts/activate
+
+Install dependancies. 
+
+pip install fastapi
+
+pip install "uvicorn[standard]"
+
+pip install requests
+
+uvicorn main:app --reload
